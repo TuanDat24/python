@@ -1,0 +1,12 @@
+a=input()
+count_hoa=0
+count_thuong=0
+for i in range(len(a)):
+    if a[i].isupper():
+        count_hoa+=1
+    else:
+        count_thuong+=1
+if count_thuong >= count_hoa:
+    print(a.lower())
+else:
+    print(a.upper())
