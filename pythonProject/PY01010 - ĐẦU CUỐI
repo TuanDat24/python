@@ -1,0 +1,8 @@
+for _ in range(int(input())):
+    n=input()
+    a= n[0]+n[1]
+    b= n[len(n)-2] + n[len(n)-1]
+    if a==b:
+        print("YES")
+    else:
+        print("NO")
