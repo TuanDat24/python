@@ -1,0 +1,13 @@
+a=input()
+i=len(a)-1
+res=''
+count=0
+while i>-1:
+    count+=1
+    res=a[i]+res
+    if i==0: break
+    if count==3:
+        res=','+res
+        count=0
+    i-=1
+print(res)
