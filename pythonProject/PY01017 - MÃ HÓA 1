@@ -1,0 +1,15 @@
+import math
+
+def invo():
+    s=input()
+    count=1
+    for i in range(len(s)-1):
+        if s[i]==s[i+1]:    count+=1
+        else:
+            print(count,s[i],sep='',end='')
+            count=1
+    print(count,s[len(s)-1],sep='',end='')
+    print()
+for _ in range(int(input())):
+    invo()
+
