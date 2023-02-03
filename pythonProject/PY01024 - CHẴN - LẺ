@@ -1,0 +1,17 @@
+
+
+for _ in range(int(input())):
+    a=input()
+    check=True
+    sum=0
+    for i in range(len(a)):
+        sum+=int(a[i])
+        if abs(int(a[i])-int(a[i-1]))==2 and sum%10==0:
+            check=True
+        else:
+            check=False
+    if check==True:
+        print("YES")
+    else:
+        print("NO")
+
