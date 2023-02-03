@@ -1,0 +1,17 @@
+import math
+def prime(n):
+    if n<2: return 0
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:  return 0
+    return 1
+def invo():
+    a, b = map(int, input().split())
+    uc = str(math.gcd(a,b))
+    sum=0
+    for i in  uc:
+        sum+=int(i)
+    if prime(sum):  print("YES")
+    else:   print("NO")
+for _ in range(int(input())):
+    invo()
+
