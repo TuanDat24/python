@@ -1,0 +1,17 @@
+import math
+t=int(input())
+for _ in range(t):
+    a=input()
+    s=a.split()
+    n=0
+    m=0
+    x=0
+    for i in s:
+        n=float(s[0])
+        x=float(s[1])
+        m=float(s[2])
+    year=math.log(m/n, 1+x/100)
+    if year==int(year): print(year)
+    else:
+        print(int(year)+1)
+
