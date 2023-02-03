@@ -1,0 +1,14 @@
+for _ in range(int(input())):
+    a=input()
+    if len(a)==2:
+        for i in range(int(a[1])):
+            print(a[0], end='')
+    else:
+        for j in range(1,int(a[1])+1):
+            print(a[0], end='')
+        for i in range(2,len(a)-2,2):
+            for j in range(1,int(a[i+1])+1):
+                print(a[i], end='')
+        for i in range(1, int(a[len(a)-1])+1):
+            print(a[len(a)-2], end='')
+    print()
