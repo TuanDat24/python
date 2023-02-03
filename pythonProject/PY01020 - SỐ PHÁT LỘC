@@ -1,0 +1,7 @@
+for _ in range(int(input())):
+    a=input()
+    check= a[len(a)-2] + a[len(a)-1]
+    if int(check)==86:
+        print("YES")
+    else:
+        print("NO")
