@@ -1,0 +1,10 @@
+for _ in range(int(input())):
+    n=int(input())
+    m=0
+    if n%2==1:
+        for i in range(1,n+1,2):
+           m = m + float(1/i)
+    else:
+        for i in range(2,n+1,2):
+           m = m + float(1/i)
+    print('{0:.{1}f}'.format(m,6))
