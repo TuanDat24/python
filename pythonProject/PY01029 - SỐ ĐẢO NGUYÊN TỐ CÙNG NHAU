@@ -1,0 +1,13 @@
+import math
+
+for _ in range(int(input())):
+    n=input()
+    dao_n=list(n)
+    dao_n.reverse()
+    so=''
+    for i in dao_n:
+        so+=i
+    if math.gcd(int(n), int(so))==1:
+        print("YES")
+    else:   print("NO")
+    print()
