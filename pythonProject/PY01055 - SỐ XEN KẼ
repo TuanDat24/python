@@ -1,0 +1,10 @@
+def Try(n):
+    for i in range(0,len(n)-1,2):
+        if n[0]==n[1] or n[i]!=n[i+2] or len(n)%2==0:
+            return 0
+    return 1
+
+for _ in range(int(input())):
+    a=input()
+    if Try(a):  print("YES")
+    else:   print("NO")
