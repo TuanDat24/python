@@ -1,0 +1,19 @@
+
+for _ in range(int(input())):
+    a=input()
+    tich=1
+    tong=0
+    count=0
+    for i in range(len(a)):
+        if i%2==0:
+            tong+=int(a[i])
+        else:
+            if a[i]=='0':
+                count+=1
+            else:
+                tich*=int(a[i])
+    if count==int(len(a)/2):
+        print(tong, 0, end=' ')
+    else:
+        print(tong, tich, end=' ')
+    print()
