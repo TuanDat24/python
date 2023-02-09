@@ -1,0 +1,16 @@
+def Try(n):
+    b=list(n)
+    b.reverse()
+    res=''
+    for i in b:
+        res = res+i
+    if res!=n :  return False
+    else:   return True
+
+for _ in range(int(input())):
+    a=input()
+    sum=0
+    for i in a:
+        sum+=int(i)
+    if Try(str(sum)) and sum>=10:   print("YES")
+    else:   print("NO")
