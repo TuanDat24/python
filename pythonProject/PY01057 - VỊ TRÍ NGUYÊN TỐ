@@ -1,0 +1,20 @@
+def Try(n):
+    if n<2: return 0
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return 0
+    return 1
+
+for _ in range(int(input())):
+    a=input()
+    count1=0
+    count2=0
+    for i in range(len(a)):
+        if Try(i)==1 and Try(int(a[i]))==1 :
+            count1+=1
+        if Try(i)==0 and Try(int(a[i]))==0:
+            count2+=1
+    if count2+count1==len(a):
+        print("YES")
+
+    else:   print("NO")
