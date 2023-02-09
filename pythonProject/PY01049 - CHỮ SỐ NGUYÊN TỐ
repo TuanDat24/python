@@ -1,0 +1,15 @@
+def nto(n):
+    if n<2: return 0
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:  return 0
+    return 1
+for _ in range(int(input())):
+    a=input()
+    count1=0
+    count2=0
+    for i in a:
+        if nto(int(i)): count1+=1
+        else:   count2+=1
+    if nto(len(a)) and count2<count1:
+        print("YES")
+    else:   print("NO")
