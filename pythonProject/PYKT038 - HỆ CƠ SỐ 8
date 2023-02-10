@@ -1,0 +1,6 @@
+def bin_to_oct(binary):
+    decimal = int(binary, 2)
+    octal = oct(decimal)
+    return octal[2:]
+n=(input())
+print(bin_to_oct(n))
