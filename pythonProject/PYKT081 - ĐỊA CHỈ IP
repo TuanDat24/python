@@ -1,0 +1,15 @@
+def check(address):
+    parts = address.split(".")
+    if len(parts) != 4:
+        return False
+    for item in parts:
+        try:
+            if not 0 <= int(item) <= 255:
+                return False
+        except ValueError:
+            return False
+    return True
+for _ in range(int(input())):
+    s=input()
+    if check(s):    print("YES")
+    else:   print("NO")
