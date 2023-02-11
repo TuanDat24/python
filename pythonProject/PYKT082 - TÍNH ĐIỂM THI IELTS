@@ -1,0 +1,41 @@
+def doc_nghe(n):
+    if n >2 and n<5:    return '2.5'
+    elif n<7:   return '3.0'
+    elif n < 7:
+        return '3.0'
+    elif n < 10:
+        return '3.5'
+    elif n < 13:
+        return '4.0'
+    elif n < 16:
+        return '4.5'
+    elif n < 20:
+        return '5.0'
+    elif n < 23:
+        return '5.5'
+    elif n < 27:
+        return '6.0'
+    elif n < 30:
+        return '6.5'
+    elif n < 33:
+        return '7.0'
+    elif n < 35:
+        return '7.5'
+    elif n < 37:
+        return '8.0'
+    elif n < 39:
+        return '8.5'
+    elif n < 41:
+        return '9.0'
+for _ in range(int(input())):
+    s=input().split()
+    doc=float(doc_nghe(int(s[0])))
+    nghe=float(doc_nghe(int(s[1])))
+    noi=float(s[2])
+    viet=float(s[3])
+    ielts=float((doc+nghe+noi+viet)/4)
+    a=ielts-int(ielts)
+    if a<0.25:  ielts=float(int(ielts))
+    elif a<0.75:  ielts=int(ielts)+0.5
+    else:   ielts=int(ielts)+1.0
+    print(ielts)
