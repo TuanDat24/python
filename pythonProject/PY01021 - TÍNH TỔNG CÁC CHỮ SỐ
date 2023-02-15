@@ -1,0 +1,15 @@
+for _ in range(int(input())):
+    s=input()
+    mylist=list(s)
+    mylist.sort()
+    res=''
+    for i in mylist:
+        res = res +i
+    a=''
+    b=0
+    for i in res:
+        if i.isalpha():
+            a=a+i
+        if i.isdigit():
+            b = b+int(i)
+    print(a, str(b), sep='')
