@@ -1,0 +1,13 @@
+s1=input()
+s2=input()
+k=int(input())-1
+s11=''
+s12=''
+if k==0:
+    print(s2,s1,sep='')
+else:
+    for i in range(0,k):
+        s11 = s11+s1[i]
+    for i in range(k,len(s1)):
+        s12= s12+s1[i]
+    print(s11,s2,s12,sep='')
