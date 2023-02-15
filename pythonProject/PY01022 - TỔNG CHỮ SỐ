@@ -1,0 +1,11 @@
+def doi(s):
+    n=0
+    for i in s:
+        n+=ord(i)-ord('0')
+    return str(n)
+s=input()
+count=0
+while len(s)>1:
+    s=doi(s)
+    count+=1
+print(count)
