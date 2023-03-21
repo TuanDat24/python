@@ -1,0 +1,8 @@
+n=int(input())
+a= [float(i) for i in input().split()]
+lit=[]
+max, min = max(a), min(a)
+for i in a:
+	if i!= max and i!=min:
+		lit.append(i)
+print("{:.2f}".format(sum(lit) / len(lit)))
