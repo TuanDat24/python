@@ -1,0 +1,18 @@
+def nto(n):
+    if n<2: return 0
+    for i in range(2, int(n**0.5)+1):
+        if n%i==0:
+            return 0
+    return 1
+
+n=int(input())
+a= [int(i) for i in input().split()]
+m= {}
+for i in a:
+	if nto(i):
+		if i in m:
+			m[i]+=1
+		else:
+			m[i]=1
+for i in m:
+	print(i, m[i], sep=' ')
