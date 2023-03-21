@@ -1,0 +1,14 @@
+for _ in range(int(input())):
+	n = int(input())
+	a = [int(i) for i in input().split()]
+	b = [int(i) for i in input().split()]
+	cnt = 0
+	a.sort()
+	b.sort()
+	for i in range(0, n):
+		if a[i]<=b[i]:
+			cnt += 1
+	if cnt==n:
+		print("YES")
+	else:
+		print("NO")
