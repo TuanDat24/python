@@ -1,0 +1,10 @@
+a=input().lower()
+s=a[-3::]
+check=True
+for i in range(len(a)):
+    if len(a)>=3 and s=='.py':
+        check=True
+    else:
+        check=False
+if check==True: print("yes")
+else:   print("no")
