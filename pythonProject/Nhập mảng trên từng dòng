@@ -1,0 +1,18 @@
+# Nhập số lượng mảng
+n = int(input("Nhập số lượng mảng: "))
+
+# Khởi tạo danh sách các mảng
+arrays = []
+
+# Lặp qua từng dòng để nhập mảng
+for i in range(n):
+    # Nhập dòng và chia các phần tử thành mảng
+    row = input().split()
+    array = [int(x) for x in row]
+    # Thêm mảng mới vào danh sách các mảng
+    arrays.append(array)
+
+# In danh sách các mảng
+print("Danh sách các mảng:")
+for array in arrays:
+    print(array)
