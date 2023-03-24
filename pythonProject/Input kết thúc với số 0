@@ -1,0 +1,6 @@
+while True:
+  #lệnh kết thúc khi input=0
+  if a==0:
+    break
+  #chương trình khi input!=0
+  .......
