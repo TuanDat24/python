@@ -1,0 +1,20 @@
+
+for _ in range(int(input())):
+    n=int(input())
+    a=[]
+    c, cnt={}, 0
+    for i in range(n):
+        x=int(input())
+        if x in c:
+            c[x]+=1
+        else:
+            c[x]=1
+        cnt=max(cnt, c[x])
+    ans=1000
+    for i in c:
+        if c[i]==cnt:
+            ans=min(ans, i)
+    print(ans)
+
+
+
