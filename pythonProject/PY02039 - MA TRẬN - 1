@@ -1,0 +1,17 @@
+import math
+
+n=int(input())
+sum_c = 0
+sum_p = 0
+for i in range(n):
+    a=[int(j) for j in input().split()]
+    for j in range(n):
+        if j>i:
+            sum_c+=a[j]
+        elif j<i:
+            sum_p+=a[j]
+k=int(input())
+if abs(sum_p-sum_c) <= k:
+    print('YES\n' + str(abs(sum_c-sum_p)))
+else:
+    print("NO\n" + str(abs(sum_c-sum_p)))
