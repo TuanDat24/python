@@ -1,0 +1,13 @@
+import math
+class phanso:
+    def __init__(self, x):
+        self.x=x
+    def toigian(self, other):
+        return str(int(self.x/math.gcd(self.x,other.x)))
+
+
+if __name__ == '__main__':
+    arr = input().split()
+    tu = phanso(int(arr[0]))
+    mau = phanso(int(arr[1]))
+    print(tu.toigian(mau)+'/'+mau.toigian(tu))
