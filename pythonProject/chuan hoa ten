@@ -1,0 +1,4 @@
+ten = ten.lower()
+words = ten.split()
+normalized_words = [word.capitalize() for word in words]
+self.normalized_name = " ".join(normalized_words)
